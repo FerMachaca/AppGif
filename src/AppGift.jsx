@@ -1,7 +1,8 @@
 export const AppGift = () => {
   return (
     <>
-      <div>AppGift</div>;
+      {/*Titulo*/}
+      <div>AppGif</div>;{/*Titulo*/}
     </>
   );
 };
