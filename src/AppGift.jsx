@@ -9,15 +9,6 @@ export const AppGift = () => {
 
   const onAddCategory = (newCategory) => {
     console.log(newCategory);
-    //DESUSTRUCTURACION
-    //metodo 1
-    // setCategories([...categories, "Voley"]);
-    // metodo 2
-    // setCategories((cat) => [...categories, "voley"]);
-    //setCategories({ newCategory, ...categories }); XERROR por poner llaves
-    //metodo 1 validacion no tan estricto
-    //    if (categories.includes(newCategory)) return;
-    // metodo3 validacion extircta con minusculas y mayusculas
     if (
       !categories.findIndex(
         (category) => category.toLowerCase() === newCategory.toLowerCase()
@@ -29,7 +20,6 @@ export const AppGift = () => {
   };
   return (
     <>
-      {/*ol -> order list      li -> items*/}
       <div>AppGif</div>;{/*Impus*/}
       <AddCategory
         //setCategoryy={setCategories}
