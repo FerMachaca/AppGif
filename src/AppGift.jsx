@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { AddCategory } from "./components/AddCategory";
+import { GifGrid } from "./components/GifGrid";
 export const AppGift = () => {
   //espacio de memoria para almacenar categorias
   const [categories, setCategories] = useState(["Futbol", "Basquet"]);
@@ -29,19 +30,15 @@ export const AppGift = () => {
   return (
     <>
       {/*ol -> order list      li -> items*/}
-      {/*Titulo*/}
       <div>AppGif</div>;{/*Impus*/}
       <AddCategory
         //setCategoryy={setCategories}
         onNewValue={(value) => onAddCategory(value)}
       />
-      {/*<button onClick={onAddCategory}>Agregar</button>*/}
-      {/*Listado de gif*/}
-      <ol>
-        {categories.map((category) => {
-          return <li key={category}>{category}</li>;
-        })}
-      </ol>
+      {/*Forma 3 :Añadiendo componen*/}
+      {categories.map((category) => (
+        <GifGrid key={category} category={category} />
+      ))}
     </>
   );
 };
