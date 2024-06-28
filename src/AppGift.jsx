@@ -3,7 +3,7 @@ import { AddCategory } from "./components/AddCategory";
 import { GifGrid } from "./components/GifGrid";
 export const AppGift = () => {
   //espacio de memoria para almacenar categorias
-  const [categories, setCategories] = useState(["Futbol", "Basquet"]);
+  const [categories, setCategories] = useState(["Futbol", "hockey"]);
   //Inicializamos con  [] -> arreglo y como ejemplo el futbol
   console.log("categories");
 
